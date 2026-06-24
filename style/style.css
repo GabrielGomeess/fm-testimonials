@@ -119,6 +119,7 @@ img {
   .grid-container {
     grid-template-columns: repeat(4, 12.5rem);
     grid-template-rows: repeat(2, auto);
+    place-content: center;
     gap: 1rem;
   }
 
@@ -148,6 +149,7 @@ img {
 }
 
 @media screen and (min-width: 90rem) {
+
   .grid-container {
     grid-template-columns: repeat(4, 16.125rem);
     gap: 1.5rem;
