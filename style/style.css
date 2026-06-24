@@ -26,16 +26,18 @@
 }
 
 body {
+  display: grid;
+  place-content: center;
+  padding: 4rem 0;
   background-color: var(--purple01);
   min-height: 100vh;
   font-family: var(--text-font);
-  padding: 4rem 0;
 }
 
 .grid-container {
   display: grid;
+  place-content: center;
   grid-template-columns: min(100% - 2rem, 20rem);
-  justify-content: center;
   gap: 2rem;
 }
 
@@ -119,7 +121,6 @@ img {
   .grid-container {
     grid-template-columns: repeat(4, 12.5rem);
     grid-template-rows: repeat(2, auto);
-    place-content: center;
     gap: 1rem;
   }
 
@@ -149,7 +150,6 @@ img {
 }
 
 @media screen and (min-width: 90rem) {
-
   .grid-container {
     grid-template-columns: repeat(4, 16.125rem);
     gap: 1.5rem;
